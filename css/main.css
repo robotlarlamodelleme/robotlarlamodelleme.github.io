@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+body {
+    font: normal 16px/1.5 'Roboto Condensed', sans-serif;
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+    padding-bottom: 148px;
+    position: relative;
+}
+
+/** Global Kısım **/
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.btn-1 {
+    padding: 0.5rem 2rem;
+    border: 1px #fff solid;
+    display: inline-block;
+    border-radius: 50px;
+    text-decoration: none;
+    color: #fff;
+    transition: background 500ms ease;
+    background: #154d63;
+}
+
+.btn-1:hover {
+    background: white;
+    color: #154d63;
+    cursor: pointer;
+}
+
+.btn-2 {
+    padding: 8px 20px;
+    margin: 10px;
+    margin-right: 40px;
+    display: inline;
+    text-decoration: none;
+    color: #154d63;
+    border: 1px #154d63 solid;
+    border-radius: 50px;
+    transition: background 500ms ease;
+}
+
+.btn-2:hover {
+    background: #154d63;
+    color: #fff;
+    cursor: pointer;
+}
+.btn-3 {
+    padding: 8px 20px;
+    margin: 10px;
+    margin-right: 40px;
+    display: inline;
+    text-decoration: none;
+    color: #154d63;
+    border: 1px #154d63 solid;
+    border-radius: 50px;
+    transition: background 500ms ease;
+    background:#d3d3d3;
+}
+
+.btn-3:hover {
+    cursor: default;
+}
+
+h1 {
+    font-size: 1.6rem;
+}
+
+/** Header Kısmı **/
+
+header {
+    background: #0084FF;
+    background-image: linear-gradient(50deg, #154d63 0%, #00C6FF 100%);
+    color: white;
+    min-height: 60px;
+    padding-top: 30px;
+    border-bottom: #154d63 7px solid;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+header a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    transition: color 300ms ease;
+}
+
+header li {
+    float: left;
+    display: inline;
+    padding: 0 20px;
+    margin-top: 3px;
+}
+
+header #branding {
+    float: left;
+}
+
+header #branding p {
+    margin-top:10px;
+    font-weight: 900;
+    font-size: 1.6rem;
+}
+
+header .nav {
+    float: right;
+    margin-top: 0px;
+}
+
+header a:hover {
+    color: #154d63;
+    font-weight: bold;
+}
+
+/** Section Bölümü **/
+
+#proje-isim {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#proje-isim h1 {
+    font-size: 55px;
+}
+header #branding img{
+    height:150px;
+}
+/*
+#TÜBİTAKfoto{
+    text-align: center;
+    margin:20px;
+    margin-bottom:0;
+}
+#TÜBİTAKfoto img{
+    height:150px;
+    border-radius: 5%;
+    margin-top:20px;
+}
+/** Kutular **/
+
+#kutular {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#kutular .kutu {
+    height: fit-content;
+    background: #fff;
+    width: 35%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    margin: 0 20px;
+    margin-bottom: 35px;
+}
+
+#kutular .kutu img {
+    width: 100%;
+}
+
+#kutular .kutu .linkler {
+    text-align: left;
+}
+
+/*#kutular .kutu .linkler .linklerYazi{
+    margin:15px 0 0 0;
+    padding:15px 40px;
+    border-bottom:2px solid #6a76a5;
+    border-top:2px solid #6a76a5;
+    text-transform: uppercase;
+}*/
+
+#kutular .kutu .linkler li {
+    display: block;
+    padding-left: 40px;
+    border-bottom: 1px solid #d3d3d3;
+}
+
+#kutular .kutu .linkler li h4 {
+    margin: 20px 0;
+    display: inline-block;
+}
+
+#kutular .kutu .linkler li a {
+    float: right;
+}
+
+.accordion {
+    content: '\02795';
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    border: 1px #154d63 solid;
+    display: inline;
+    text-decoration: none;
+    color: #fff;
+    background: #154d63;
+    transition: background 500ms ease;
+}
+
+.accordion:hover, .active {
+    background: #fff;
+    color: #154d63;
+    border: 1px #154d63 solid;
+    border-left: 0;
+    border-right: 0;
+}
+
+.accordion:after {
+    content: '\02795';
+    /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: white;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2796";
+    /* Unicode character for "minus" sign (-) */
+}
+
+/*.active, .accordion:hover {
+    background-color: #ccc;
+}*/
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+/** Footer Kısmı **/
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background: #154d63;
+    background-image: linear-gradient(50deg, #154d63 0%, #00C6FF 200%);
+    width: 100%;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    box-shadow: 0 -4px 8px 0 rgba(0, 0, 0, 0.2), 0 -6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media(max-width:1123px) {
+    #kutular {
+        flex-direction: column;
+    }
+    #kutular .kutu {
+        width: 100%;
+        margin-left:0;
+    }
+    header .nav, header li, header #branding {
+        text-align: center;
+        width: 100%;
+        float: none;
+        margin-bottom: 20px;
+    }
+}
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 10;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.8);
+    /* Black w/ opacity */
+    padding: auto;
+}
+
+.modal iframe {
+    position: absolute;
+    border:none;
+    overflow: hidden;
+    width: 80%;
+    min-height: 95%;
+}
+
+/* Modal Content/Box */
+
+.modal-content {
+    overflow: hidden;
+    background-color: #fefefe;
+    margin: 2% auto;
+    /* 15% from the top and centered */
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    /* Could be more or less, depending on screen size */
+    min-height: 95%;
+}
+
+.modal p {
+    text-indent: 50px;
+    text-align: justify;
+}
+
+/* The Close Button */
+
+.close {
+    z-index: 1;
+    position: fixed;
+    top: 3%;
+    right:5%;
+    font-size: 28px;
+    background: #606061;
+    color: #FFFFFF;
+    line-height: 25px;
+    text-align: center;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    -moz-box-shadow: 1px 1px 3px #000;
+    -webkit-box-shadow: 1px 1px 3px #000;
+    box-shadow: 1px 1px 3px #000;
+}
+
+.close:hover, .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* SCROLLER */
+
+/* width */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
